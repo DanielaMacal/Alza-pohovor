@@ -1,0 +1,77 @@
+* {box-sizing: border-box; margin: 0;}
+
+body {font-family: 'Roboto', sans-serif; max-width: 1255px; margin: auto;} 
+
+
+h1 {font-family: 'Poppins', sans-serif; font-size: 40px; color: white; font-weight: normal; letter-spacing: 0px;}
+h2 {font-family: 'Poppins', sans-serif; font-size: 40px; text-align: center; padding-top: 70px; padding-bottom: 40px;}
+h3 {font-family: 'Poppins', sans-serif; font-size: 40px; text-align: center; margin-top: 40px;}
+h4 {font-size: 14px; color: #E9242E; text-align: center; margin-bottom: 20px; font-weight: normal;}
+h5 {font: 16px; line-height: 26px; padding-top: 30px;}
+ul {list-style-type: none; padding: 0; margin: 0;}
+li {font-size: 14px; line-height: 38px; text-align: right;}
+.container {display: flex;}
+
+
+/*--header--*/
+.container--header {background-image: url(img/women.png), url(img/main_bg.png); background-repeat: no-repeat, no-repeat; background-position: right bottom, left top; height: 690px; color: white; padding: 100px 85px 35px 85px;}
+.containerHeader-left {display: flex; flex-direction: column;}
+.containerHeader-left img {height: 57px; width: 332px;}
+.containerHeader-left h1 {padding-top: 55px; padding-bottom: 64px;}
+.containerHeader-left p {color: #FF7D7D; font-size: 14px; margin-top: auto; line-height: 24px;}
+.btn__try {text-decoration: none; color: white; font-size: 20px; padding: 17px 42px; background-color: #A1C900; margin-right: auto; border-radius: 4px; box-shadow: 0px 1px 4px #00000026;letter-spacing: 0.43px;}
+.link__sale {color: #FF7D7D; font-size: 14px; text-align: center; margin-right: auto; margin-top: 20px; letter-spacing: 0.43px; width: 255px;}
+
+/*--Co získáte v programu Alza Premium?--*/
+.container--programPremium {background-color: #F4F5F5; min-height: 1000px; display: flex; flex-direction: column; padding: 0 75px 120px 75px;}
+.arrow {height: 22px; margin: 0 auto;}
+.tiles--detail {box-shadow: 0px 2px 5px #00000026; border-radius: 4px; padding: 21px 17px; max-width: 250px; align-items: center; text-align: center; background-color: white; margin: 10px;}
+.detail--img {width: 64px; height: 64px; margin: auto; display: flex;}
+.detail--img img {margin: auto;}
+.detail--p__strong {font-size: 16px;font-weight: bold; padding: 18px 0; letter-spacing: 0px;}
+.detail--p {font-size: 14px; letter-spacing: 0px; line-height: 24px;}
+.tiles {display: flex; flex-wrap: wrap; justify-content: center;}
+.btn__try2 {text-decoration: none; color: white; font-size: 20px; padding: 17px 42px; background-color: #A1C900; margin: auto; margin-top: 40px; border-radius: 4px; box-shadow: 0px 1px 4px #00000026;letter-spacing: 0.43px;}
+
+/*--Výhody, které se vyplatí--*/
+.container--benefits {background-color: #E8E8E8; min-height: 600px; display: flex; flex-direction: column; padding: 30px 75px 120px 75px;}
+.link__savings {margin: 20px auto; color: #888888;}
+
+.switch-field { display: flex; margin-bottom: 36px; overflow: hidden; margin: 10px auto; } 
+.switch-field input { position: absolute !important; clip: rect(0, 0, 0, 0); height: 1px; width: 1px;  overflow: hidden; }
+.switch-field label { background-color: white; color: black; font-size: 16px; text-align: center; padding: 8px 0; transition: all 0.4s ease-in-out; width: 127px;}
+.switch-field label:hover {cursor: pointer; }
+.switch-field input:checked + label {background-color: #A1C900; color: white;}
+.switch-field label:first-of-type {border-radius: 4px 0 0 4px}
+.switch-field label:last-of-type {border-radius: 0 4px 4px 0;}
+
+/*--Aktivujte si Alza Premium ještě dnes--*/
+.container--activation {background-color: #F4F5F5; min-height: 1000px; display: flex; flex-direction: column; padding: 30px 75px 120px 75px;}
+.container--activation h4 {padding-bottom: 10px;}
+.activation--p {font-size: 16px; text-align: center; letter-spacing: 0px; line-height: 26px;}
+.activation--column {display: flex; justify-content: center;}
+.activation--column__second,
+.activation--column__third,
+.activation--column__fourth {text-align: center; background-color: white; box-shadow: 0px 2px 5px #00000026; border-radius: 4px; min-height: 600px;}
+.activation--column__second div:nth-of-type(2n),
+.activation--column__third div:nth-of-type(2n),
+.activation--column__fourth div:nth-of-type(2n) {background-color: #F9F9F9;}
+.activation--column__first {width: 230px; margin: 150px 10px 0 10px;}
+.activation--column__second {width: 180px; margin: 50px 10px 0 10px; }
+.activation--column__third {width: 230px; margin: 30px 10px 0 10px; padding-top: 20px; background-image: url(img/Mask\ Group\ 1.png); background-repeat: no-repeat; background-position: right top;}
+.activation--column__fourth {width: 180px; margin: 50px 10px 0 10px;}
+.column--rows {height: 37px;}
+.column--rows img {top: auto; padding-top: 9px;}
+div.bottom {height: 100px; display: flex;}
+.btn__version {text-decoration: none; color: white; font-size: 16px; padding: 20px; background-color: #A1C900; border-radius: 4px; box-shadow: 0px 1px 4px #00000026;letter-spacing: 0.43px; margin: auto;}
+.link__version {color: black; font-size: 14px; margin: auto;}
+
+/*--footer--*/
+.container--footer {background-image: url(img/women-bottom.png), url(img/bg.png); background-repeat: no-repeat, no-repeat; background-position: left 20px bottom, left top; height: 470px; color: white; padding: 100px 85px 35px 85px; display: flex; flex-direction: column; text-align: center;} 
+.container--footer h1 {font-weight: bold;}
+.container--footer p {font-size: 16px; line-height: 26px; padding-top: 40px; padding-bottom: 50px;}
+.social--btn {margin: -7px;}
+
+
+
+
