@@ -140,13 +140,20 @@ div.bottom {height: 100px; display: flex;}
   .activation--column__second,
   .activation--column__third,
   .activation--column__fourth {margin-right: 10px; width: 150px;}
-  .columnForMobile {width: calc(100% + 20px); }
+  .columnForMobile {width: calc(100% + 30px); }
 }
 
 @media only screen and (max-width: 400px){ 
   .activation--column__second,
   .activation--column__third,
   .activation--column__fourth {margin-right: 10px; width: 120px; margin-left: 0;}
+} 
+
+@media only screen and (max-width: 355px) {
+  .containerHeader-left img {width: 290px;}
+  .containerHeader-left h1, h1, h2 {font-size: 26px;}
+  h4 {font-size: 12px;}
+  li {font-size: 10px;}
 }
 
 
