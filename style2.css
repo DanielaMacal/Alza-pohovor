@@ -1,0 +1,5 @@
+
+.columnForMobile {display: flex;}
+.activation--column__second {display: none;}
+.activation--column__fourth {display: none;}
+.activation--column__third {width: 180px; margin: 50px 10px 0 10px; padding-top: 0; background-image: none; }

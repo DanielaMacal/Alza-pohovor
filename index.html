@@ -98,13 +98,15 @@
       <div class="container container--benefits">
         <h2>Výhody, které se vyplatí</h2>
         <div class="switch-field">
-          <input type="radio" id="radio-one" name="switch-one" value="yes" checked/>
+          <input type="radio" id="radio-one" onclick="myFunction1()" name="switch-one" value="yes" checked/>
           <label for="radio-one">Měsíční úspora</label>
-          <input type="radio" id="radio-two" name="switch-one" value="no" />
+          <input type="radio" id="radio-two" onclick="myFunction2()" name="switch-one" value="no" />
           <label for="radio-two">Roční úspora</label>
         </div>
-        <h3>22 750 Kč</h3>
-        <h4>Průměrná roční úspora člena Alza Premium</h4>
+        <div id="changeSavings">
+          <h3>1 895 Kč</h3>
+          <h4>Průměrná měsíční úspora člena Alza Premium</h4>
+        </div>
         <div class="tiles">
           <div class="tiles--detail">
             <div class="detail--img"><img src="img/shipped.png"></div>
@@ -137,23 +139,34 @@
         <h2>Aktivujte si Alza Premium ještě dnes</h2>
         <p class="activation--p">Vyzkoušejte si Alza Premium <strong>na 1 měsíc zdarma</strong> a získejte ihned několik výhod.</p>
         <p class="activation--p">Pokud chcete ušetřit ještě více, aktivujte si roční verzi za <strong>2 490 Kč</strong>, na které <strong>ušetříte 498 Kč</strong> oproti měsíční verzi.</p>
+        <div class="columnForMobile">
+          <!-- <input type="radio" id="choice-one" onclick="myFunction3()" name="choice-one" value="no"/>
+          <label for="radio-one">Zkušební verze</label>
+          <input type="radio" id="choice-two" onclick="myFunction4()" name="choice-one" value="yes" chcked />
+          <label for="radio-two">Roční verze</label>
+          <input type="radio" id="choice-three" onclick="myFunction5()" name="choice-one" value="no" />
+          <label for="radio-two">Měsíční verze</label> -->
+          <button onclick="myFunction3()" value="no" >Zkušební verze</button>
+          <button onclick="myFunction4()" value="yes" checked >Roční verze</button>
+          <button onclick="myFunction5()" value="no" >Měsíční verze</button>
+        </div>
         <div class="activation--column">
           <div class="activation--column__first">
             <ul>
-              <li>Doprava zdarma na vše</li>
-              <li>Prioritní vyřízení reklamací</li>
-              <li>Osobní asistent</li>
+              <li class="dottedUnderline">Doprava zdarma na vše</li>
+              <li class="dottedUnderline">Prioritní vyřízení reklamací</li>
+              <li class="dottedUnderline">Osobní asistent</li>
               <li>Black Friday o den dříve</li>
-              <li>Přednost na zákaznické lince</li>
+              <li class="dottedUnderline">Přednost na zákaznické lince</li>
               <li>Exkluzivní Premium Deals</li>
               <li>Garance nejlepší ceny</li>
-              <li>Přednostní přístup</li>
+              <li class="dottedUnderline">Přednostní přístup</li>
               <li>Předplatné časopisů a novin zdarma</li>
-              <li>Alza Home Box zdarma</li>
+              <li class="dottedUnderline">Alza Home Box zdarma</li>
               <li>2 měsíce Alza Premium zdarma</li>
             </ul>
           </div>
-          <div class="activation--column__second">
+          <div id="column2" class="activation--column__second">
             <div class="top">
                <h5>Zkušební verze</h5>
                <h4>na 1 měsíc zdarma</h4>
@@ -171,7 +184,7 @@
             <div class="column--rows"><img src="img/circle-error (2).png"></div>
             <div class="bottom"><a class="link__version" href="#">Získat zkušební verzi</a></div>
           </div>
-          <div class="activation--column__third">
+          <div id="column3" class="activation--column__third">
             <div class="top">
                <h5>Roční verze</h5>
                <h4>207 Kč / měsíčně</h4>
@@ -189,7 +202,7 @@
             <div class="column--rows"><img src="img/circle-error (2).png"></div>
             <div class="bottom"><a class="btn__version" href="#">Získat roční verzi</a></div>
           </div>
-          <div class="activation--column__fourth">
+          <div id="column4" class="activation--column__fourth">
             <div class="top">
                <h5>Měsíční verze</h5>
                <h4>249 Kč / měsíčně</h4>
@@ -205,7 +218,7 @@
             <div class="column--rows"><img src="img/circle-check (3).png"></div>
             <div class="column--rows"><img src="img/circle-error (2).png"></div>
             <div class="column--rows"><img src="img/circle-error (2).png"></div>
-            <div class="bottom"><a class="link__version" href="#">Získat zkušební verzi</a></div>
+            <div class="bottom"><a class="link__version" href="#">Získat měsíční verzi</a></div>
           </div>
         </div>
       </div>
