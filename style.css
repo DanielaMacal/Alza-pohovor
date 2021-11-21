@@ -62,19 +62,19 @@ li {font-size: 14px; line-height: 38px; text-align: right;}
 .activation--column__second {width: 180px; margin: 50px 10px 0 10px; }
 .activation--column__third {width: 230px; margin: 30px 10px 0 10px; padding-top: 20px; background-image: url(img/Mask\ Group\ 1.png); background-repeat: no-repeat; background-position: right top;}
 .activation--column__fourth {width: 180px; margin: 50px 10px 0 10px;}
-.column--rows {height: 37px;}
+.column--rows {height: 38px;}
 .column--rows img {top: auto; padding-top: 9px;}
 div.bottom {height: 100px; display: flex;}
 .btn__version {text-decoration: none; color: white; font-size: 16px; padding: 20px; background-color: #A1C900; border-radius: 4px; box-shadow: 0px 1px 4px #00000026;letter-spacing: 0.43px; margin: auto;}
 .link__version {color: black; font-size: 14px; margin: auto;}
-.columnForMobile {display: none; flex-direction: column; border-radius: 4px; box-shadow: 0px 1px 4px #00000026; background: white; margin-top: 30px; font-size: 14px;}
-.columnForMobile button {margin: auto; padding: 15px 100px; border: none; background-color: white;}
-.columnForMobile button:hover {cursor: pointer;}
-.columnForMobile button:checked {background-color: #A1C900; color: white;}
-
-
-
-
+.columnForMobile {display: none; flex-direction: column; border-radius: 4px; box-shadow: 0px 1px 4px #00000026; margin-top: 30px; font-size: 14px;}
+.btn--choice1,
+.btn--choice3 {background-color: white;}
+.btn--choice2 {background-color: #F9F9F9;}
+.columnForMobile button:first-of-type {border-radius: 4px 4px 0 0;}
+.columnForMobile button:last-of-type {border-radius: 0 0 4px 4px;}
+.columnForMobile button {border: none; border-radius: 0; padding-top: 10px; padding-bottom: 10px; transition: all 0.4s ease-in-out;}
+.columnForMobile button:hover {cursor: pointer; }
 
 
 /*--footer--*/
@@ -93,10 +93,10 @@ div.bottom {height: 100px; display: flex;}
 
 @media only screen and (max-width: 768px) {
   .columnForMobile {display: flex;}
-  .columnForMobile {display: flex;}
-  .activation--column__second {display: none;}
-  .activation--column__fourth {display: none;}
   .activation--column__third {width: 180px; margin: 50px 10px 0 10px; padding-top: 0; background-image: none; }
+  .hide {display: none;}
+  .show {display: flex;}
+  .active {background-color: #A1C900; color: white}
 }
 
 @media only screen and (max-width: 600px) {}
