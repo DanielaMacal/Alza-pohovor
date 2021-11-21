@@ -7,7 +7,7 @@ h1 {font-family: 'Poppins', sans-serif; font-size: 40px; color: white; font-weig
 h2 {font-family: 'Poppins', sans-serif; font-size: 40px; text-align: center; padding-top: 70px; padding-bottom: 40px;}
 h3 {font-family: 'Poppins', sans-serif; font-size: 36px; text-align: center; margin-top: 40px;}
 h4 {font-size: 14px; color: black; text-align: center; margin-bottom: 20px; letter-spacing: 0.43px; font-weight: normal;}
-h5 {font: 16px; line-height: 26px; padding-top: 30px;}
+h5 {font-size: 16px; line-height: 26px; padding-top: 30px;}
 ul {list-style-type: none; padding: 0; margin: 0;}
 li {font-size: 14px; line-height: 38px; text-align: right;}
 .container {display: flex;}
@@ -37,7 +37,7 @@ li {font-size: 14px; line-height: 38px; text-align: right;}
 .container--benefits {background-color: #E8E8E8; min-height: 600px; display: flex; flex-direction: column; padding: 30px 75px 120px 75px;}
 .link__savings {margin: 20px auto; color: #888888; letter-spacing: 0.43px;}
 
-.switch-field { display: flex; margin-bottom: 36px; overflow: hidden; margin: 10px auto; } 
+.switch-field { display: flex; margin-bottom: 36px; overflow: hidden; margin: 10px auto; box-shadow: 0px 1px 4px #00000026;} 
 .switch-field input { position: absolute !important; clip: rect(0, 0, 0, 0); height: 1px; width: 1px; overflow: hidden; }
 .switch-field label { background-color: white; color: black; font-size: 16px; text-align: center; padding: 8px 0; transition: all 0.4s ease-in-out; width: 127px;}
 .switch-field label:hover {cursor: pointer; }
@@ -48,13 +48,13 @@ li {font-size: 14px; line-height: 38px; text-align: right;}
 
 /*--Aktivujte si Alza Premium ještě dnes--*/
 .container--activation {background-color: #F4F5F5; min-height: 1000px; display: flex; flex-direction: column; padding: 30px 75px 120px 75px;}
-.container--activation h4 {padding-bottom: 10px; font-weight: normal; letter-spacing: 0px;}
+.container--activation h4 {padding-bottom: 10px; font-weight: normal; letter-spacing: 0px; color: #E9242E;}
 .activation--p {font-size: 16px; text-align: center; letter-spacing: 0px; line-height: 26px;}
 .dottedUnderline {text-decoration: underline dotted;}
 .activation--column {display: flex; justify-content: center; text-underline-offset: 3px;}
 .activation--column__second,
 .activation--column__third,
-.activation--column__fourth {text-align: center; background-color: white; box-shadow: 0px 2px 5px #00000026; border-radius: 4px; min-height: 600px; flex-direction: column;}
+.activation--column__fourth {text-align: center; background-color: white; box-shadow: 0px 2px 5px #00000026; border-radius: 4px; min-height: 550px; flex-direction: column;}
 .activation--column__second div:nth-of-type(2n),
 .activation--column__third div:nth-of-type(2n),
 .activation--column__fourth div:nth-of-type(2n) {background-color: #F9F9F9;}
@@ -66,15 +66,17 @@ li {font-size: 14px; line-height: 38px; text-align: right;}
 .column--rows img {top: auto; padding-top: 9px;}
 div.bottom {height: 100px; display: flex;}
 .btn__version {text-decoration: none; color: white; font-size: 16px; padding: 20px; background-color: #A1C900; border-radius: 4px; box-shadow: 0px 1px 4px #00000026;letter-spacing: 0.43px; margin: auto;}
-.link__version {color: black; font-size: 14px; margin: auto;}
-.columnForMobile {display: none; flex-direction: column; border-radius: 4px; box-shadow: 0px 1px 4px #00000026; margin-top: 30px; font-size: 14px;}
+.link__version {color: black; font-size: 16px; margin: auto;}
+.link__version2 {display: none; text-decoration: none; color: white; background-color: #A1C900; width: 100%; padding-top: 20px;}
+.columnForMobile {display: none; flex-direction: column; border-radius: 4px; box-shadow: 0px 1px 4px #00000026; width: 430px; margin: 40px auto 0 auto; }
 .btn--choice1,
 .btn--choice3 {background-color: white;}
 .btn--choice2 {background-color: #F9F9F9;}
 .columnForMobile button:first-of-type {border-radius: 4px 4px 0 0;}
 .columnForMobile button:last-of-type {border-radius: 0 0 4px 4px;}
-.columnForMobile button {border: none; border-radius: 0; padding-top: 10px; padding-bottom: 10px; transition: all 0.4s ease-in-out;}
-.columnForMobile button:hover {cursor: pointer; }
+.columnForMobile button {border: none; border-radius: 0; padding-top: 15px; padding-bottom: 15px; transition: all 0.4s ease-in-out; font-size: 16px; }
+.columnForMobile button:hover {cursor: pointer;}
+
 
 
 /*--footer--*/
@@ -86,9 +88,13 @@ div.bottom {height: 100px; display: flex;}
 @media only screen and (max-width: 1200px) {}
 
 @media only screen and (max-width: 992px) {
-.activation--column__second,
-.activation--column__fourth,
-.activation--column__third {display: flex;}
+  .container--programPremium {padding: 0 10px 50px 10px;}
+  .container--benefits,
+  .container--activation {padding: 50px 20px;}
+  .container--header,
+  .container--footer {padding: 50px 20px;}
+
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -97,10 +103,39 @@ div.bottom {height: 100px; display: flex;}
   .hide {display: none;}
   .show {display: flex;}
   .active {background-color: #A1C900; color: white}
+  .link__version2 {display: block;}
+  .link__version,
+  .btn__version {display: none;}
+  .container--header {height: 500px ;background-size: 55%, auto;}
+  .container--footer {height: auto;background-size: 0, auto;}
+  .container--footer p {padding: 40px 0;}
+  .containerHeader-left h1 {padding: 40px 0; font-size: 32px;}
+  h2 {padding-top: 10px; font-size: 32px;}
+  .arrow {margin-bottom: 30px;}
+  .link__savings {margin-bottom: 0;}
+  div.bottom {height: 60px;}
 }
 
-@media only screen and (max-width: 600px) {}
+@media only screen and (max-width: 600px) {
+  .container--header {height: 650px;}
+  .containerHeader-left h1, h1, h2 {font-size: 30px;}
+  .containerHeader-left p { font-size: 14px; max-width: 250px; line-height: 20px; margin-top: 40px; text-align: center;}
+  li {font-size: 12px;}
+  .btn__try, .btn__try2 {font-size: 16px; width: 250px;}
+  .containerHeader-left p {font-size: 14px;}
+  .columnForMobile {box-shadow: none; border-radius: none; width: calc(100% + 40px); margin-left: -20px; margin-right: -20px;}
+}
+@media only screen and (max-width: 450px){ 
+  .container--programPremium,
+  .container--benefits,
+  .container--activation,
+  .container--header,
+  .container--footer {padding-left: 10px; padding-right: 10px;}
+  .activation--column__first {margin-left: 0;}
+  .activation--column__second,
+  .activation--column__third,
+  .activation--column__fourth {margin-right: 0; width: 150px;}
+}
 
-@media only screen and (max-width: 600px) {}
 
 
